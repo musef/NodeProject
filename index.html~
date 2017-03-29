@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Angular2</title>
+
+	<link rel="import" href="app/views/libs.html">
+	
+	
+    <!-- 2. Configurar SystemJS -->
+    <script>
+      System.config({
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>
+	</head>
+	<body>
+		<app-ang></app-ang>
+	</body>
+</html>
