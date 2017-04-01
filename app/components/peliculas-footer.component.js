@@ -1,4 +1,4 @@
-System.register(['angular2/core', './components/peliculas-listado.component', './components/peliculas-footer.component'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,37 +10,29 @@ System.register(['angular2/core', './components/peliculas-listado.component', '.
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, peliculas_listado_component_1, peliculas_footer_component_1;
-    var AppComponent;
+    var core_1;
+    var PeliculasFooterComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (peliculas_listado_component_1_1) {
-                peliculas_listado_component_1 = peliculas_listado_component_1_1;
-            },
-            function (peliculas_footer_component_1_1) {
-                peliculas_footer_component_1 = peliculas_footer_component_1_1;
             }],
         execute: function() {
             // Decorador component, indicamos en que etiqueta se va a cargar la plantilla
-            AppComponent = (function () {
-                function AppComponent() {
+            PeliculasFooterComponent = (function () {
+                function PeliculasFooterComponent() {
                 }
-                AppComponent = __decorate([
+                PeliculasFooterComponent = __decorate([
                     core_1.Component({
-                        selector: 'app-ang',
-                        templateUrl: 'app/views/app-template.html',
-                        directives: [peliculas_listado_component_1.PeliculasListadoComponent, peliculas_footer_component_1.PeliculasFooterComponent],
-                        styleUrls: ["../assets/css/app.css"]
+                        selector: 'peliculas-footer',
+                        templateUrl: 'app/views/peliculas-footer.html',
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], PeliculasFooterComponent);
+                return PeliculasFooterComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("PeliculasFooterComponent", PeliculasFooterComponent);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=peliculas-footer.component.js.map

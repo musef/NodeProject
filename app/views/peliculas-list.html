@@ -1,0 +1,22 @@
+<h2>Here i'm again</h2>
+
+<h1>{{encabezado}}</h1>
+
+<button (click)="onShowHide(showData)" [class.whatbuttonblue]="showData===true" [class.whatbuttonred]="showData===false" >{{buttonTitle}}</button>
+
+<ul *ngIf="showData===true">
+	<li>{{pelicula.titulo}}</li>
+	<li>{{pelicula.fecha}}</li>
+	<li>{{pelicula.tipo}}</li>
+</ul>
+<input type="text" [(ngModel)]="pelicula.titulo" >
+
+<hr>
+<ul *ngFor="#pelicula of peliculas">
+	<ul>
+	<li (click)="onChangeFilm(pelicula)">{{pelicula.titulo}}</li>
+	<li>{{pelicula.fecha}}</li>
+	<li>{{pelicula.tipo}}</li>
+	</ul>
+</ul>
+
