@@ -1,2 +1,10 @@
-<peliculas-listado></peliculas-listado>
+{{title}}
+<nav>
+	<ul>
+		<li><a [routerLink]="['Peliculas']">Inicio</a></li>
+		<li>Nueva</li>
+		<li><a [routerLink]="['Contacto']">Contacto</a></li>
+	</ul>
+</nav>
+<router-outlet></router-outlet>
 <peliculas-footer></peliculas-footer>
